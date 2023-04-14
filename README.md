@@ -11,7 +11,7 @@
 
 [ShuThesis](https://github.com/ahhylau/shuthesis)
 
-感谢@qiubinyang同学对模板的修改。
+感谢 [@qiubinyang](https://github.com/qiubinyang) 同学对模板的修改。
 
 # 使用步骤
 - 下载本模板到本地解压，或git clone本模板
