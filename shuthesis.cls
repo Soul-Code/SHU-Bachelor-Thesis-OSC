@@ -105,7 +105,7 @@
 \RequirePackage{tabu}
 \RequirePackage{booktabs}
 \RequirePackage{ulem}
-\RequirePackage[numbers,sort&compress,super,square]{natbib}
+\RequirePackage[numbers,sort&compress,square]{natbib}
 \patchcmd{\@chapter}{\addtocontents{lof}{\protect\addvspace{10\p@}}}{}{}{} % lof
 \patchcmd{\@chapter}{\addtocontents{lot}{\protect\addvspace{10\p@}}}{}{}{} % lot
 \RequirePackage{hyperref}
@@ -214,8 +214,8 @@
   \fancyhead{}
   % \fancyhead[LE]{\wuhao\kaishu 上海大学毕业设计(论文)}
   % \fancyhead[LO]{\wuhao\kaishu 上海大学毕业设计(论文)}
-  \fancyhead[LE]{\xiaowu 上海大学毕业设计(论文)}
-  \fancyhead[LO]{\xiaowu 上海大学毕业设计(论文)}
+  \fancyhead[LE]{\xiaowu 上海大学硕士学位论文}
+  \fancyhead[LO]{\xiaowu 上海大学硕士学位论文}
   % \fancyhead[CE]{\wuhao\kaishu 上海大学毕业设计(论文)}
   \fancyfoot{}
   \fancyfoot[C]{\wuhao\thepage}
@@ -299,21 +299,21 @@
     afterindent=true,
     beforeskip={24bp\@plus 1ex \@minus .2ex},
     afterskip={6bp\@plus .2ex},
-    name={\S},
+    name={},
     format={\shu@title@font\sanhao\heiti},
   },
   subsection={
     afterindent=true,
     beforeskip={16bp\@plus 1ex \@minus .2ex},
     afterskip={6bp \@plus .2ex},
-    name={\S},
+    name={},
     format={\shu@title@font\large\heiti},
   },
   subsubsection={
     afterindent=true,
     beforeskip={16bp\@plus 1ex \@minus .2ex},
     afterskip={6bp \@plus .2ex},
-    name={\S},
+    name={},
     format={\shu@title@font\large\heiti},
   },
   paragraph/afterindent=true,

@@ -16,14 +16,22 @@
 %\setCJKmainfont{Songti SC Light}[BoldFont=Heiti SC Light,ItalicFont=Kaiti SC, BoldItalicFont=Kaiti SC Bold] % MacOS 
 
 \begin{document}
-\includepdf[pages={1}]{cover.pdf} 
+\includepdf[pages=-]{cover.pdf} 
+
+% 重新设置页码从5开始，这取决于你前面封面的有几页
+\pagenumbering{Roman}
+\setcounter{page}{5}
+
+\include{data/abstract}
 
 \frontmatter
 {
     \hypersetup{linkcolor=black}
     \tableofcontents
+    % \listoffigures*
+    % \listoftables*
 }
-\include{data/abstract}
+
 
 \mainmatter
 \include{data/chap01}
@@ -31,14 +39,17 @@
 \include{data/chap03}
 \include{data/chap04}
 
-\include{data/acknowledgement}
-
 \bibliographystyle{shuthesis}
 \bibliography{reference/refs}
 
 \backmatter
 \begin{appendix}
-\input{data/appendix}
+    \input{data/achievement}
+    \input{data/achievement1}
 \end{appendix}
+
+
+\include{data/acknowledgement}
+
 
 \end{document}
