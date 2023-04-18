@@ -1,5 +1,5 @@
 % !Mode:: "TeX:UTF-8"
-\documentclass[type=doctor, openany, pifootnote]{shuthesis}
+\documentclass[type=master, openany, pifootnote]{shuthesis}
 % 选项:
 %  type=[master|doctor],            % 必选
 %  secret,                          % 可选 (如果论文需要保密, 这一项需要打开)
@@ -18,9 +18,8 @@
 \begin{document}
 
 % 把参考文献改成上标的形式
-\makeatletter
-\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa  #2\fi}]}}
-\makeatother
+\let\oldcite\cite
+\renewcommand{\cite}[1]{\textsuperscript{\oldcite{#1}}}
 
 \includepdf[pages=-]{cover.pdf}
 
@@ -49,11 +48,11 @@
 \bibliography{reference/refs}
 
 \backmatter
-\begin{appendix}
-    \input{data/achievement}
-    \input{data/achievement1}
-\end{appendix}
-
+% \begin{appendix}
+%     \input{data/achievement}
+%     \input{data/achievement1}
+% \end{appendix}
+\include{data/publications}
 
 \include{data/acknowledgement}
 
