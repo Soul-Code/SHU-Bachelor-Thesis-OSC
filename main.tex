@@ -16,7 +16,13 @@
 %\setCJKmainfont{Songti SC Light}[BoldFont=Heiti SC Light,ItalicFont=Kaiti SC, BoldItalicFont=Kaiti SC Bold] % MacOS 
 
 \begin{document}
-\includepdf[pages=-]{cover.pdf} 
+
+% 把参考文献改成上标的形式
+\makeatletter
+\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa  #2\fi}]}}
+\makeatother
+
+\includepdf[pages=-]{cover.pdf}
 
 % 重新设置页码从5开始，这取决于你前面封面的有几页
 \pagenumbering{Roman}
